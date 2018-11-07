@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ua">
+<meta charset="UTF-8">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <title>урок 3 формы</title>
+</head>
+</head>
+
+<body>
+    <h2>Урок "Формы": теги и их атрибуты.</h2>
+    <h3>Расскажите немного о себе...</h3>
+    <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+    <form method="GET" action="" target="area">
+        <fieldset>
+            <legend class="h-1"><h4>Коротко о себе</h4></legend>
+            
+                <label>
+                    Имя:
+                    <input type="text" name="firstname" placeholder="Введите имя" required>
+                </label>
+            <br><br>
+            
+                <label>
+                    Фамилия:
+                    <input type="text" name="lastname" placeholder="Введите фамилию" required>
+                </label>
+            
+            <br><br>
+                <label>
+                    Пол:
+                    <input type="radio" name="check"  checked>мужской
+                </label>
+                <label>
+                    <input type="radio" name="check" >женский
+                </label>
+            
+             <br><br>
+                <label>
+                    Возраст:
+                    <input class="oldsize" type="text" name="old"  required> лет
+                </label>
+            <br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend><h4>Подробнее о себе</h4></legend>
+
+            <label>
+                <input type="radio" name="man" checked>Молодой человек
+                <br>
+            </label>
+            <label>
+                <input type="radio" name="girl">Девушка
+                <br>
+
+            </label>
+
+            <label>
+                <input type="text"> Дата рождения
+                <br>
+
+            </label>
+            <label>
+                <input type="text"> Семейное положение
+                <br>
+
+            </label>
+            <label>
+                <input type="text"> Социальный статус
+                <br>
+
+            </label>
+            <label>
+                <input type="text"> Местожительство
+
+            </label>
+            <h4>Что вы обычно делаете на выходных:</h4>
+            <br>
+            <label>
+                <input type="checkbox" name="freebie"> Сплю
+                <br>
+            </label>
+            <label>
+                <input type="checkbox" name="freebie"> Гуляю с друзьями
+                <br>
+            </label>
+            <label>
+                <input type="checkbox" name="freebie"> Хожу на рыбалку
+                <br>
+            </label>
+            <label>
+                <input type="checkbox" name="freebie"> Играю в игры
+            </label>
+        <h4>Рассказать о формах в книге, посвященной HTML:</h4>
+            
+                <select name="news" id="htmlskillz">
+                    <option value="news">Html basics</option>
+                    <option value="news">Forms</option>
+                    <option value="news">Tables</option>
+                </select>
+            
+    <h4>Сколько книг вы прочитали за совю жизнь:</h4>
+                <input type="radio" name="total"> 0-10
+                <br>
+                <input type="radio" name="total"> 11-20
+                <br>
+                <input type="radio" name="total"> 21-50
+                <br>
+                <input type="radio" name="total"> 50+
+            <label>
+                <span><h4>Ваши комментарии:</h4></span>
+                <textarea name="com" cols="60" rows="10"></textarea>
+            </label>
+               <br>
+                <select size="3">
+                    <option>Первая позиция</option>
+                    <option>Вторая позиция</option>
+                    <option>Третья позиция</option>
+                </select>
+        </fieldset>
+            <fieldset>
+                <legend><h4>И в заключении</h4></legend>
+                <input type="text" placeholder="Это поле было до вас">
+                <h4>Email:</h4>
+                <input type="email" name="message">
+<h4>Хотите подписаться на самую модную рассылку спама?</h4>
+                <label>
+                    <em>Выберите категорию</em>
+                </label>
+                   <br>
+                    <label>
+                        <input type="checkbox"> Оборудование
+                        <br>
+                    </label>
+                    <label>
+                        <input type="checkbox"> Как приготовить обеды
+                        <br>
+                    </label>
+                    <label>
+                        <input type="checkbox"> Заработай миллион за два дня!
+                    </label>
+<h4>На сколько сложная задача:</h4>
+                <label>
+                    <input type="radio" name="EASY LEVEL" checked> Совсем нет
+                    <br>
+                </label>
+                <label>
+                    <input type="radio" name="EASY LEVEL"> Так себе
+                    <br>
+                </label>
+                <label>
+                    <input type="radio" name="EASY LEVEL"> Еле справились
+                </label>
+            </fieldset>
+                <p><input type="submit" value="Отправить"></p>
+    </form>
+</body>
+</html>
